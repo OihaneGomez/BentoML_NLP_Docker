@@ -3,7 +3,6 @@ FROM python:3.10-slim
 WORKDIR /app
 
 COPY ./Scripts /app/Scripts
-COPY ./Models /app/Models
 
 # 🔥 Añade esto
 ENV PYTHONPATH="/app/Scripts"
