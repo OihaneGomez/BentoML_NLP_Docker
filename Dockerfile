@@ -4,6 +4,9 @@ FROM python:3.10-slim
 # Set the working directory in the container
 WORKDIR /app
 
+# Configure pip to use a mirror for package installation, in case of hash mismatches from the default index
+RUN pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
+
 # Copy the requirements.txt file into the container
 COPY requirements.txt /app/
 
