@@ -1,6 +1,0 @@
-bentoml==1.4.6
-pandas
-scikit-learn
-sentence-transformers
-rank_bm25
-pydantic
