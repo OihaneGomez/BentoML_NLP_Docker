@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  bentoml-nlp:
+    build: .
+    container_name: bentoml_nlp
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Scripts:/app/Scripts
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app/Scripts
