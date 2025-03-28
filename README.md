@@ -31,7 +31,7 @@ BentoML_NLP/
 
 ```bash
 
-git clone <your-repo-url>
+git clone https://github.com/OihaneGomez/BentoML_NLP_Docker/
 
 cd BentoML_NLP
 
@@ -45,7 +45,7 @@ docker-compose up  --build
 
   
 # API Endpoint
-Once the container is running, navigate to: http://localhost:3000
+Once the container is running, navigate to port 3000. For instace: http://localhost:3000 
 You will see the **BentoML Swagger UI**, which documents the available endpoints:
 
 ### POST `/search_processes`
