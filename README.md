@@ -39,7 +39,7 @@ cd BentoML_NLP
 
 ### 2. Build and start the container
 ```bash
-docker-compose up  --build
+docker compose up  --build
   ```
   
 
