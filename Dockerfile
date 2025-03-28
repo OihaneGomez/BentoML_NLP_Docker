@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y \
 # Copy the application code into the container
 COPY ./Scripts /app/Scripts
 
+# Set environment variables
+ENV PYTHONPATH="/app/Scripts"
+ENV BENTOML_HOME=/app
+
 # Expose the port that the application will run on
 EXPOSE 3000
 
